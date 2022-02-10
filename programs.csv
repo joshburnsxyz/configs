@@ -11,3 +11,5 @@ p,youtube-dl,CLI utility to download Youtube videos
 a,https://aur.archlinux.org/asdf-vm.git,Pluggable version manager
 p,arandr,Display configuration utility
 p,htop,System monitor
+p,zsh,Z shell bash replacement
+p,stow,GNU Stow dotfile mangement utility
