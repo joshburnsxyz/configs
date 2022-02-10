@@ -18,3 +18,6 @@ while IFS=, read -r install_type name description; do
         ;;
     esac
 done < programs.csv
+
+# Install OhMyZsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
