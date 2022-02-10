@@ -21,3 +21,6 @@ done < programs.csv
 
 # Install OhMyZsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Install emacs config
+git clone https://github.com/joshburnsxyz/.emacs.d ~/.emacs.d
