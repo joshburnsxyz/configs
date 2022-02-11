@@ -1,0 +1,4 @@
+super + p
+      rofi -show drun
+super + w
+      rofi -show window

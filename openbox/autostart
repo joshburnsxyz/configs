@@ -1,4 +1,5 @@
 . ~/.screenlayout/uw.sh
+sxhkd &
 thunar --daemon &
 xfce4-panel &
 xfdesktop &
