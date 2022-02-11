@@ -11,6 +11,10 @@ p,arandr,Display configuration utility
 p,htop,System monitor
 p,zsh,Z shell bash replacement
 p,stow,GNU Stow dotfile mangement utility
+p,obs-studio,Screen capture and streaming tool
+p,flameshot,Screenshot utility
+p,transmission-gtk,torrent client
+p,vlc,media player
 a,https://aur.archlinux.org/paru.git,AUR helper
 a,https://aur.archlinux.org/git-extras.git,Collection of git plugins
 a,https://aur.archlinux.org/asdf-vm.git,Pluggable version manager
