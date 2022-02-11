@@ -15,6 +15,8 @@ p,obs-studio,Screen capture and streaming tool
 p,flameshot,Screenshot utility
 p,transmission-gtk,torrent client
 p,vlc,media player
+p,sxhkd,simple X hotkey daemon
+p,jgmenu,Launcher
 a,https://aur.archlinux.org/paru.git,AUR helper
 a,https://aur.archlinux.org/git-extras.git,Collection of git plugins
 a,https://aur.archlinux.org/asdf-vm.git,Pluggable version manager
