@@ -5,7 +5,7 @@ sudo pacman -Syyu --noconfirm
 
 # Read programs.csv and install programs
 while IFS=, read -r install_type name description; do 
-    case $type in
+    case $install_type in
       p)
         sudo pacman -S $name --noconfirm
         ;;
