@@ -1,15 +1,16 @@
 type,name,description
+p,base-devel,Collection of development tools
+p,git,version control system
 p,emacs,text editor
 p,chromium,web browser
 p,neofetch,system information tool
 p,curl,cURL
 p,wget,wget
-p,base-devel,Collection of development tools
-a,https://aur.archlinux.org/paru.git,AUR helper
-a,https://aur.archlinux.org/git-extras.git,Collection of git plugins
 p,youtube-dl,CLI utility to download Youtube videos
-a,https://aur.archlinux.org/asdf-vm.git,Pluggable version manager
 p,arandr,Display configuration utility
 p,htop,System monitor
 p,zsh,Z shell bash replacement
 p,stow,GNU Stow dotfile mangement utility
+a,https://aur.archlinux.org/paru.git,AUR helper
+a,https://aur.archlinux.org/git-extras.git,Collection of git plugins
+a,https://aur.archlinux.org/asdf-vm.git,Pluggable version manager
