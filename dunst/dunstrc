@@ -185,7 +185,7 @@
     ### Icons ###
 
     # Align icons left/right/off
-    icon_position = off
+    icon_position = left
 
     # Scale small icons up to this size, set to 0 to disable. Helpful
     # for e.g. small files or high-dpi screens. In case of conflict,
@@ -196,7 +196,7 @@
     max_icon_size = 32
 
     # Paths to default icons.
-    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    icon_path = /usr/share/icons/Adwaita/16x16/devices:/usr/share/icons/Adwaita/16x16/actions:/usr/share/icons/Adwaita/16x16/apps:/usr/share/icons/Adwaita/16x16/categories:/usr/share/icons/Adwaita/16x16/emblems:/usr/share/icons/Adwaita/16x16/emotes:/usr/share/icons/Adwaita/16x16/legacy:/usr/share/icons/Adwaita/16x16/mimetypes:/usr/share/icons/Adwaita/16x16/places:/usr/share/icons/Adwaita/16x16/status:/usr/share/icons/Adwaita/16x16/ui
 
     ### History ###
 
