@@ -1,0 +1,14 @@
+tap "homebrew/cask"
+
+brew "asdf"
+brew "git"
+brew "wget"
+brew "curl"
+brew "pure"
+
+cask "emacs"
+cask "keepassxc-beta"
+cask "fork"
+cask "spotify"
+cask "obs"
+cask "transmission"
