@@ -6,6 +6,4 @@ autoload -U promptinit; promptinit
 prompt pure
 
 # Load Plugins
-for file in $HOME/.zsh-plugins/**/*(.); source $file
-
-export PATH="$PATH:$HOME/.zsh-plugins"
+for file in $HOME/.zsh-plugins/**/*.plugin.zsh; source $file
