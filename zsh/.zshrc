@@ -1,12 +1,12 @@
-export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="lambda"
-plugins=(git emacs aliases common-aliases alias-finder vi-mode archlinux)
+eval "$(/opt/homebrew/bin/brew shellenv)"
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
-export EDITOR="te"
-export VI_MODE_SET_CURSOR=true
-export MODE_INDICATOR="%F{white}+%f"
-export INSERT_MODE_INDICATOR="%F{yellow}+%f"
+fpath+=/opt/homebrew/share/zsh/site-functions
+autoload -U promptinit; promptinit
+prompt pure
 
-source /opt/asdf-vm/asdf.sh
-source $ZSH/oh-my-zsh.sh
-neofetch
+# Plugins
+. $HOME/.zsh-plugins/git.plugin.zsh
+. $HOME/.zsh-plugins/emacs.plugin.zsh
+
+export PATH="$PATH:$HOME/.zsh-plugins"
