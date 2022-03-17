@@ -5,8 +5,7 @@ fpath+=/opt/homebrew/share/zsh/site-functions
 autoload -U promptinit; promptinit
 prompt pure
 
-# Plugins
-. $HOME/.zsh-plugins/git.plugin.zsh
-. $HOME/.zsh-plugins/emacs.plugin.zsh
+# Load Plugins
+for file in $HOME/.zsh-plugins/**/*(.); source $file
 
 export PATH="$PATH:$HOME/.zsh-plugins"
