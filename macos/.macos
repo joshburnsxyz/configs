@@ -1,0 +1,47 @@
+#!/bin/sh
+
+# Inspired by https://mths.be/macos
+
+osascript -e 'tell application "System Preferences" to quit'
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+###############################################################################
+# UI/UX                                                                       #
+###############################################################################
+
+
+# Set computer name
+computer_name_string="farquad"
+sudo scutil --set ComputerName "$computer_name_string"
+sudo scutil --set HostName "$computer_name_string"
+sudo scutil --set LocalHostName "$computer_name_string"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$computer_name_string"
+
+# Set highlight color
+defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
+
+# Reveal IP address, hostname, OS version, etc. when clicking the clock
+# in the login window
+sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+
+###############################################################################
+# Activity Monitor                                                            #
+###############################################################################
+
+# Show the main window when launching Activity Monitor
+defaults write com.apple.ActivityMonitor OpenMainWindow -bool true
+
+# Visualize CPU usage in the Activity Monitor Dock icon
+defaults write com.apple.ActivityMonitor IconType -int 5
+
+# Show all processes in Activity Monitor
+defaults write com.apple.ActivityMonitor ShowCategory -int 0
+
+# Sort Activity Monitor results by CPU usage
+defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
+defaults write com.apple.ActivityMonitor SortDirection -int 0
+
+echo "Done. Note that some of these changes require a logout/restart to take effect."
