@@ -1,7 +1,7 @@
 #!/bin/sh
 
 install_to_home() {
-  cp -R $1/* $HOME/
+  ln -s $(pwd)/$1/* $HOME/
 }
 
 echo "setting macos defaults"
