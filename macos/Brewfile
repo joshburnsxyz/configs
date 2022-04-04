@@ -6,7 +6,7 @@ brew "wget"
 brew "curl"
 brew "pure"
 
-cask "emacs"
+cask "visual-studio-code"
 cask "keepassxc-beta"
 cask "fork"
 cask "spotify"
