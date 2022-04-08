@@ -1,5 +1,4 @@
 tap "homebrew/cask"
-tap "jesseduffield/lazydocker"
 tap "jesseduffield/lazygit"
 
 brew "asdf"
@@ -9,11 +8,10 @@ brew "curl"
 brew "pure"
 brew "git-extras"
 brew "youtube-dl"
-brew "jesseduffield/lazydocker/lazydocker"
 brew "jesseduffield/lazygit/lazygit"
 
 cask "visual-studio-code"
-cask "keepassxc-beta"
+cask "keepassxc"
 cask "fork"
 cask "spotify"
 cask "obs"
