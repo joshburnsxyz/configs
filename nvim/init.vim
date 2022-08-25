@@ -327,7 +327,7 @@ endfunction
 " ======================== Custom Mappings ====================== "{{{
 
 "" the essentials
-let mapleader=","
+let mapleader=" "
 nnoremap ; :
 nmap \ <leader>q
 map <F6> :Startify <CR>
@@ -427,6 +427,9 @@ xmap <leader>a <Plug>(coc-codeaction-selected)
 " fugitive mappings
 nmap <leader>gd :Gdiffsplit<CR>
 nmap <leader>gb :Git blame<CR>
+nmap <leader>ga :Git add .<CR>
+nmap <leader>gc :Git<CR>
+nmap <leader>gl :Glog<CR>
 
 " tmux navigator
 nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
