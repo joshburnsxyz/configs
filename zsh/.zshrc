@@ -17,3 +17,7 @@ alias e="$EDITOR"
 
 # Load Plugins
 for file in $HOME/.zsh-plugins/**/*.plugin.zsh; source $file
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
