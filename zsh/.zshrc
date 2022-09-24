@@ -2,7 +2,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 export EDITOR="nvim"
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH:$(go env GOPATH)"
 
 fpath+=/opt/homebrew/share/zsh/site-functions
 autoload -U promptinit; promptinit
