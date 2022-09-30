@@ -13,7 +13,7 @@ alias nbweb="curl https://gist.githubusercontent.com/joshburnsxyz/cf48df7e908b12
 # vim shortcuts
 alias vi="$EDITOR"
 alias vim="$EDITOR"
-alias e="$EDITOR"
+alias vundle="$EDITOR +PluginInstall +qall"
 
 # Load Plugins
 for file in $HOME/.zsh-plugins/**/*.plugin.zsh; source $file
