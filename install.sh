@@ -10,6 +10,7 @@ brew bundle ./macos/Brewfile
 
 mkdir $HOME/.config/nvim
 
-echo "Installing stow packages"
+echo "Installing Neovim configuration"
 stow -t $HOME/.config nvim
+$(which nvim) +PluginInstall +qall
 stow -t $HOME zsh
