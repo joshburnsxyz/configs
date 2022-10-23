@@ -15,6 +15,7 @@ brew "fzf"
 brew "ripgrep"
 brew "stow"
 brew "tmux"
+brew "gh"
 
 cask "keepassxc"
 cask "findergo"
