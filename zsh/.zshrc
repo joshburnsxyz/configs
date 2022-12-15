@@ -9,3 +9,5 @@ prompt pure
 
 # Load Plugins
 for file in $HOME/.zsh-plugins/**/*.plugin.zsh; source $file
+
+sysinfop
