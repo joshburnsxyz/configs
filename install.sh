@@ -8,6 +8,4 @@ echo "install homebrew"
 echo "installing homebrew packages"
 brew bundle ./macos/Brewfile
 
-mkdir $HOME/.config/nvim
-
 stow -t $HOME zsh
