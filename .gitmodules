@@ -1,6 +1,0 @@
-[submodule "emacs/crafters"]
-	path = emacs/crafters
-	url = https://github.com/SystemCrafters/crafted-emacs
-[submodule "emacs/doom"]
-	path = emacs/doom
-	url = https://github.com/doomemacs/doomemacs
