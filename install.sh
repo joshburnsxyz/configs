@@ -8,4 +8,7 @@ echo "install homebrew"
 echo "installing homebrew packages"
 brew bundle ./macos/Brewfile
 
+echo "installing npm packages"
+. ./macos/npm-global.sh
+
 stow -t $HOME zsh

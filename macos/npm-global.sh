@@ -8,4 +8,3 @@ inpm() {
 
 inpm prettier
 inpm yarn
-inpm neovim
