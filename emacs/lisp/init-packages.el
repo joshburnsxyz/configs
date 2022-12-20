@@ -20,4 +20,9 @@
   :config
   (evil-collection-init))
 
+
+;; Telephone Line - Status bar
+(use-package telephone-line
+  :ensure t)
+
 (provide 'init-packages)

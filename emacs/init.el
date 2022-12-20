@@ -11,4 +11,5 @@
 (require 'init-ui)
 (require 'init-elpa)
 (require 'init-packages)
+(require 'init-statusbar)
 (require 'init-keybindings)
