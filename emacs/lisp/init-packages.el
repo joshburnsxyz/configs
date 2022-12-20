@@ -60,4 +60,8 @@
   :config
   (yas-reload-all))
 
+;; Magit - Git porcelain
+(use-package magit
+  :ensure t)
+
 (provide 'init-packages)
