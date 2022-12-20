@@ -23,7 +23,15 @@
  ;; f+ File management
  "ff" 'helm-find-files
  "fd" 'dired
+ ;; p+ Project
+ "pp" 'helm-projectile-switch-project
+ "pa" 'projectile-add-known-project
+ "pf" 'helm-projectile-find-file
+ "pd" 'helm-projectile-find-dir
  ;; g+ Git
- "gg" 'magit-status)
+ "gg" 'magit-status
+ ;; x+ Misc.
+ "xt" 'term
+ "xT" 'load-theme)
 
 (provide 'init-keybindings)
