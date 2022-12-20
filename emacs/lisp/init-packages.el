@@ -19,6 +19,10 @@
   :ensure t
   :config
   (evil-collection-init))
+(use-package evil-nerd-commenter
+  :ensure t
+  :config
+  (evilnc-default-hotkeys))
 
 ;; Telephone Line - Status bar
 (use-package telephone-line
