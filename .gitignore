@@ -1,10 +1,5 @@
-*autoload/
-*plugged/
-spell/*
-.netrwhist
-pack/*
-
-# -*- mode: gitignore; -*-
+emacs/custom.el
+elpa
 *~
 \#*\#
 /.emacs.desktop

@@ -4,6 +4,9 @@
 ;; Point to custom.el file
 (setq custom-file (locate-user-emacs-file "custom.el"))
 
+;; Debugging
+(setq debug-on-startup t)
+
 ;; Load modules
-(require 'inti-ui)
+(require 'init-ui)
 (require 'init-elpa)

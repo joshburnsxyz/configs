@@ -14,6 +14,6 @@
   (package-refresh-contents)
   (package-install 'use-package))
 (require 'use-package)
-(setq use-package-always-ensure 't)o
+(setq use-package-always-ensure 't)
 
 (provide 'init-elpa)
