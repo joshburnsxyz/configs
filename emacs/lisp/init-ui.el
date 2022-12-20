@@ -130,6 +130,6 @@
 
 ;; Set font
 (add-to-list 'default-frame-alist '(font . "FiraMono Nerd Font Mono" ))
-(set-face-attribute 'default t :font "FiraMono Nerd Font Mono" )
+(set-face-attribute 'default t :font "FiraMono Nerd Font Mono" :height 140 )
 
 (provide 'init-ui)
