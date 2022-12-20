@@ -41,4 +41,13 @@
   :config
   (global-company-mode))
 
+;; LSP
+(use-package lsp-mode
+  :ensure t
+  :init
+  (setq lsp-keymap-prefix "C-c l")
+  :commands lsp)
+(use-package lsp-ui :commands lsp-ui-mode)
+(use-package helm-lsp :commands helm-lsp-workspace-symbol)
+
 (provide 'init-packages)
