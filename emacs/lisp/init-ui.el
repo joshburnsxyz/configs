@@ -124,6 +124,12 @@
       '((1 . (overline background variable-pitch 1.3))
         (2 . (rainbow overline 1.1))
         (t . (semibold))))
+
+;; Load theme
 (load-theme 'modus-operandi)
+
+;; Set font
+(add-to-list 'default-frame-alist '(font . "FiraMono Nerd Font Mono" ))
+(set-face-attribute 'default t :font "FiraMono Nerd Font Mono" )
 
 (provide 'init-ui)
