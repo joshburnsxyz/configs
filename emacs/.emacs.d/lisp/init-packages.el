@@ -79,4 +79,10 @@
 (use-package magit
   :ensure t)
 
+;; Dirvish - dired replacement
+(use-package dirvish
+  :ensure t
+  :config
+  (dirvish-override-dired-mode))
+
 (provide 'init-packages)
