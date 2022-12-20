@@ -2,7 +2,9 @@
 ;;; Commentary:
 ;;; Code:
 
-;; Override M-x with Helm
-(global-set-key (kbd "M-x") 'helm-M-x)
+;; Global Keybindings
+(general-define-key "M-x" 'helm-M-x) ;; Use helm for M-x
+
+;; 
 
 (provide 'init-keybindings)

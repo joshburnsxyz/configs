@@ -20,9 +20,19 @@
   :config
   (evil-collection-init))
 
-
 ;; Telephone Line - Status bar
 (use-package telephone-line
+  :ensure t)
+
+;; Which Key - Context-aware keybinding help
+(use-package which-key
+  :ensure t
+  :config
+  (which-key-mode)
+  (which-key-setup-side-window-bottom))
+
+;; General - Keybinding engine
+(use-package general
   :ensure t)
 
 (provide 'init-packages)
