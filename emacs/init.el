@@ -10,3 +10,5 @@
 ;; Load modules
 (require 'init-ui)
 (require 'init-elpa)
+(require 'init-packages)
+(require 'init-keybindings)
