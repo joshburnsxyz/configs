@@ -28,6 +28,17 @@
 (use-package telephone-line
   :ensure t)
 
+;; Projectile - Project Management
+(use-package projectile
+  :ensure t
+  :config
+  (projectile-mode 1)
+  (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map))
+(use-package helm-projectile
+  :ensure t
+  :config
+  (helm-projectile-on))
+
 ;; Which Key - Context-aware keybinding help
 (use-package which-key
   :ensure t
