@@ -9,6 +9,10 @@
 (setq package-enable-at-startup nil)
 (package-initialize)
 
+;; Setup Repos
+(add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
+
 ;; use-package to simplify the config file
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
