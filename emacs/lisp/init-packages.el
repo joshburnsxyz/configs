@@ -56,6 +56,8 @@
   :config
   (yas-global-mode 1))
 (use-package yasnippet-snippets
-  :ensure t)
+  :ensure t
+  :config
+  (yas-reload-all))
 
 (provide 'init-packages)
