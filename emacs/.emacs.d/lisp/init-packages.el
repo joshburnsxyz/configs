@@ -4,33 +4,27 @@
 ;;; Code:
 
 ;; Minibuffer extensions
-(use-package helm
-  :ensure t)
+(use-package helm)
 
 ;; Evil mode - vim emulation
 (use-package evil
-  :ensure t
   :init
   (setq evil-want-integration t) 
   (setq evil-want-keybinding nil)
   :config
   (evil-mode 1))
 (use-package evil-collection
-  :ensure t
   :config
   (evil-collection-init))
 (use-package evil-nerd-commenter
-  :ensure t
   :config
   (evilnc-default-hotkeys))
 
 ;; Telephone Line - Status bar
-(use-package telephone-line
-  :ensure t)
+(use-package telephone-line)
 
 ;; Projectile - Project Management
 (use-package projectile
-  :ensure t
   :config
   (projectile-mode 1)
   (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map))
@@ -41,24 +35,20 @@
 
 ;; Which Key - Context-aware keybinding help
 (use-package which-key
-  :ensure t
   :config
   (which-key-mode)
   (which-key-setup-side-window-bottom))
 
 ;; General - Keybinding engine
-(use-package general
-  :ensure t)
+(use-package general)
 
 ;; Company mode - Autocomplete
 (use-package company
-  :ensure t
   :config
   (global-company-mode))
 
 ;; LSP
 (use-package lsp-mode
-  :ensure t
   :init
   (setq lsp-keymap-prefix "C-c l")
   :commands lsp)
@@ -67,21 +57,17 @@
 
 ;; YASnippet - Snippets and text templating system
 (use-package yasnippet
-  :ensure t
   :config
   (yas-global-mode 1))
 (use-package yasnippet-snippets
-  :ensure t
   :config
   (yas-reload-all))
 
 ;; Magit - Git porcelain
-(use-package magit
-  :ensure t)
+(use-package magit)
 
 ;; Dirvish - dired replacement
 (use-package dirvish
-  :ensure t
   :config
   (dirvish-override-dired-mode))
 
