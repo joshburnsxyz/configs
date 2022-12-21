@@ -24,7 +24,7 @@
 
 ;;; Code:
 
-(defun reindent-buffer ()
+(defun my/reindent-buffer ()
   "Mark whole buffer, then indent the region."
   (interactive)
   (save-excursion
