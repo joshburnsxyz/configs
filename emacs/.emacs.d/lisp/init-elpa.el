@@ -3,7 +3,6 @@
 ;;; Code:
 
 (require 'package)
-(require 'cl-lib)
 
 ;; Init package.el
 (setq package-enable-at-startup nil)
