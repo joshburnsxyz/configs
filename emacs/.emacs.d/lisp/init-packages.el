@@ -71,4 +71,15 @@
   :config
   (dirvish-override-dired-mode))
 
+;; Ace-Link - Bindings to follow links in org-mode, help buffers, etc.
+(use-package ace-link
+  :config
+  (ace-link-setup-default))
+
+;; Smartparens - Minor mode for dealing with parens pairs
+(use-package smartparens
+  :hook (prog-mode . ace-jump-mode)
+  :config
+  (require 'smartparens-config))
+
 (provide 'init-packages)
