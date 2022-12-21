@@ -3,6 +3,9 @@
 
 ;;; Code:
 
+;; Quelpa - Source package manager
+(use-package quelpa)
+
 ;; Minibuffer extensions
 (use-package helm)
 
