@@ -4,6 +4,7 @@
 
 ;; Global Keybindings
 (general-define-key "M-x" 'helm-M-x) ;; Use helm for M-x
+(general-define-key "M-S-\" 'my/reindent-buffer) ;; Shortcut for reindent-buffer plugin
 
 ;; Vim leader keybidings
 (general-create-definer my-leader-def
