@@ -98,6 +98,10 @@
 ;; RestClient - HTTP Rest client inside of Emacs.
 (use-package restclient)
 
+;; Org Bullets - Pretty bullets in org mode
+(use-package org-bullets
+  :hook (org-mode . org-bullets-mode 1))
+
 ;; Web-Mode - HTML Templating language support
 (use-package web-mode
   :config

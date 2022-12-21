@@ -7,11 +7,6 @@
 (scroll-bar-mode -1)
 (defalias 'yes-or-no-p 'y-or-n-p)
 
-;; Define the init file
-(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
-(when (file-exists-p custom-file)
-  (load custom-file))
-
 ;; Display line numbers in every buffer
 (global-display-line-numbers-mode 1)
 

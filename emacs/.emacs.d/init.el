@@ -1,15 +1,17 @@
 ;; Add lisp directory to load path
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
-;; Point to custom.el file
-(setq custom-file (locate-user-emacs-file "custom.el"))
-
+;; Define the init file
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(when (file-exists-p custom-file)
+  (load custom-file))
 ;; Debugging
 (setq debug-on-startup t)
 
-;; Load modules
+;; Load modules (order is important)
 (require 'init-ui)
 (require 'init-elpa)
 (require 'init-packages)
 (require 'init-statusbar)
+(require 'init-org)
 (require 'init-keybindings)
