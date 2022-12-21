@@ -120,7 +120,7 @@
         (2 . (rainbow overline 1.1))
         (t . (semibold))))
 
-;; Load theme
+;; Default/Fallback theme
 (load-theme 'modus-operandi)
 
 ;; Set font

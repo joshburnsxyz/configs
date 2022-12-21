@@ -3,11 +3,13 @@
 
 ;;; Code:
 
-;; Quelpa - Source package manager
-(use-package quelpa)
-
 ;; Minibuffer extensions
 (use-package helm)
+
+;; Nano Theme
+(use-package nano-theme
+  :config
+  (load-theme 'nano-light t))
 
 ;; Evil mode - vim emulation
 (use-package evil
