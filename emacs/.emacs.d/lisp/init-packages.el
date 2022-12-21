@@ -85,6 +85,9 @@
   :config
   (ace-link-setup-default))
 
+;; Ace-Jump - fast/direct cursor movement
+(use-package ace-jump-mode)
+
 ;; Smartparens - Minor mode for dealing with parens pairs
 (use-package smartparens
   :hook (prog-mode . ace-jump-mode)

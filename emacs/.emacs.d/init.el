@@ -1,5 +1,6 @@
 ;; Add lisp directory to load path
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "site-lisp" user-emacs-directory))
 
 ;; Define the init file
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
@@ -14,4 +15,8 @@
 (require 'init-packages)
 (require 'init-statusbar)
 (require 'init-org)
+
+(require 'load-personal-config)
+
+;; Assign Keybindings last
 (require 'init-keybindings)

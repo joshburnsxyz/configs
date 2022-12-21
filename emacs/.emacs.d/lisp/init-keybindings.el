@@ -35,6 +35,7 @@
  "tw" 'writeroom-mode
  ;; x+ Misc.
  "xt" 'term
+ "xC" 'my/load-personal-config
  "xT" 'load-theme)
 
 (provide 'init-keybindings)
