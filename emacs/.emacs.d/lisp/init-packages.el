@@ -82,4 +82,11 @@
   :config
   (require 'smartparens-config))
 
+;; Dimmer - Enhance focus by dimming inactive buffers
+(use-package dimmer
+  :config
+  (dimmer-configure-which-key)
+  (dimmer-configure-helm)
+  (dimmer-mode t))
+
 (provide 'init-packages)
