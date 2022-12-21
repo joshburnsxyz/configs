@@ -100,7 +100,7 @@
 
 ;; Org Bullets - Pretty bullets in org mode
 (use-package org-bullets
-  :hook (org-mode . (org-bullets-mode 1)))
+  :hook (org-mode . (lambda () (org-bullets-mode 1))))
 
 ;; Web-Mode - HTML Templating language support
 (use-package web-mode
