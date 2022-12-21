@@ -95,4 +95,16 @@
   (dimmer-configure-helm)
   (dimmer-mode t))
 
+;; RestClient - HTTP Rest client inside of Emacs.
+(use-package restclient)
+
+;; Web-Mode - HTML Templating language support
+(use-package web-mode
+  :config
+  (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.tpl\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.tt\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode)))
+
 (provide 'init-packages)
