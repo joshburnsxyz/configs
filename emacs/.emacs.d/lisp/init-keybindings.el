@@ -32,6 +32,7 @@
  "gg" 'magit-status
  ;; t+ Toggles
  "ts" 'prettify-symbols-mode
+ "tw" 'writeroom-mode
  ;; x+ Misc.
  "xt" 'term
  "xT" 'load-theme)

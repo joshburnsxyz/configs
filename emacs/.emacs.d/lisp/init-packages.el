@@ -114,4 +114,8 @@
   (add-to-list 'auto-mode-alist '("\\.tt\\'" . web-mode))
   (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode)))
 
+;; Writeroom Mode - Distraction free writing mode for prose
+(use-package visual-fill-column)
+(use-package writeroom-mode)
+
 (provide 'init-packages)
