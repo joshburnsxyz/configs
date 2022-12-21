@@ -30,6 +30,8 @@
  "pd" 'helm-projectile-find-dir
  ;; g+ Git
  "gg" 'magit-status
+ ;; t+ Toggles
+ "ts" 'prettify-symbols-mode
  ;; x+ Misc.
  "xt" 'term
  "xT" 'load-theme)

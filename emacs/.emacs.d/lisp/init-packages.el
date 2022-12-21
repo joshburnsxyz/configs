@@ -66,10 +66,16 @@
 ;; Magit - Git porcelain
 (use-package magit)
 
+;; VSCode Icons 
+(use-package vscode-icon
+  :commands (vscode-icon-for-file))
+
 ;; Dirvish - dired replacement
 (use-package dirvish
   :config
-  (dirvish-override-dired-mode))
+  (dirvish-override-dired-mode)
+  (setq dirvish-attributes
+      '(vc-state subtree-state vscode-icon collapse file-size)))
 
 ;; Ace-Link - Bindings to follow links in org-mode, help buffers, etc.
 (use-package ace-link
