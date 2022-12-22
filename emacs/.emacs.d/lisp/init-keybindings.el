@@ -2,6 +2,9 @@
 ;;; Commentary:
 ;;; Code:
 
+;; Load functions from site-lisp
+(require 'load-personal-config)
+
 ;; Global Keybindings
 (general-define-key "M-x" 'helm-M-x) ;; Use helm for M-x
 (general-define-key "M-/" 'my/reindent-buffer) ;; Shortcut for reindent-buffer plugin

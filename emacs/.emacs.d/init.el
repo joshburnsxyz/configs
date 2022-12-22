@@ -20,7 +20,5 @@
 (require 'init-statusbar)
 (require 'init-org)
 
-(require 'load-personal-config)
-
 ;; Assign Keybindings last
 (require 'init-keybindings)

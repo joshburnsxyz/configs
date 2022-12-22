@@ -26,9 +26,9 @@
 
 (defun my/reindent-buffer ()
   "Mark whole buffer, then indent the region."
-  (interactive)
+  (interactive "P")
   (save-excursion
     (indent-region (point-min) (point-max) nil)))
 
-(provide reindent-buffer)
+(provide 'reindent-buffer)
 ;;; reindent-buffer.el ends here
