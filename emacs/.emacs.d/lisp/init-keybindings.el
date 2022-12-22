@@ -34,6 +34,7 @@
  ;; t+ Toggles
  "ts" 'prettify-symbols-mode
  "tw" 'writeroom-mode
+ "tl" 'global-display-line-numbers-mode
  ;; x+ Misc.
  "xt" 'term
  "xC" 'my/load-personal-config
