@@ -6,11 +6,6 @@
 ;; Minibuffer extensions
 (use-package helm)
 
-;; Nano Theme
-(use-package nano-theme
-  :config
-  (load-theme 'nano-light t))
-
 ;; Evil mode - vim emulation
 (use-package evil
   :init
@@ -109,9 +104,6 @@
 ;; Org Bullets - Pretty bullets in org mode
 (use-package org-bullets
   :hook (org-mode . (lambda () (org-bullets-mode 1))))
-
-;; Web-Mode - HTML Templating language support
-(use-package web-mode)
 
 ;; Writeroom Mode - Distraction free writing mode for prose
 (use-package visual-fill-column)
