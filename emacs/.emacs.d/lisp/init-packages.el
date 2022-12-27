@@ -109,4 +109,9 @@
 (use-package visual-fill-column)
 (use-package writeroom-mode)
 
+;; Kaolin Themes - Theme package
+(use-package kaolin-themes
+  :config
+  (load-theme 'kaolin-dark t))
+
 (provide 'init-packages)
