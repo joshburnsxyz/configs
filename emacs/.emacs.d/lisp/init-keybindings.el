@@ -23,7 +23,7 @@
  "wh" 'windmove-left
  "wj" 'windmove-down
  "wk" 'windmove-up
- "wh" 'windmove-right
+ "wl" 'windmove-right
  ;; b+ Buffer management
  "bm" 'buffer-menu
  ;; f+ File management

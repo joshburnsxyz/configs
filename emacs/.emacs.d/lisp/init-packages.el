@@ -111,9 +111,7 @@
   :hook (org-mode . (lambda () (org-bullets-mode 1))))
 
 ;; Web-Mode - HTML Templating language support
-(use-package web-mode
-  :config
-  (require 'web-mode-hooks))
+(use-package web-mode)
 
 ;; Writeroom Mode - Distraction free writing mode for prose
 (use-package visual-fill-column)
