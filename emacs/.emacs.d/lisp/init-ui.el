@@ -124,8 +124,8 @@
 (load-theme 'modus-operandi)
 
 ;; Set font
-(add-to-list 'default-frame-alist '(font . "FiraMono Nerd Font Mono" ))
-(set-face-attribute 'default t :font "FiraMono Nerd Font Mono" :height 140 )
+(add-to-list 'default-frame-alist '(font . "FuraMono Nerd Font Mono" ))
+(set-face-attribute 'default t :font "FuraMono Nerd Font Mono" :height 140 )
 
 ;; Set window dimensions
 (when window-system (set-frame-size (selected-frame) 97 46))
