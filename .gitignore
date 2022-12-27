@@ -47,3 +47,6 @@ flycheck_*.el
 
 # network security
 /network-security.data
+/emacs/.emacs.d/custom.el
+/emacs/.emacs.d/projectile-bookmarks.eld
+/emacs/.emacs.d/transient/
