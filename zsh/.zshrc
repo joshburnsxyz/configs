@@ -7,8 +7,6 @@ fpath+=/opt/homebrew/share/zsh/site-functions
 autoload -U promptinit; promptinit
 prompt pure
 
-alias emacs="open -a Emacs $@"
-
 # Load Plugins
 for file in $HOME/.zsh-plugins/**/*.plugin.zsh; source $file
 
