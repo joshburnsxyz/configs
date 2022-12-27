@@ -42,6 +42,7 @@
  "tl" 'global-display-line-numbers-mode
  ;; x+ Misc.
  "xt" 'term
+ "xu" 'my/uniquify-all-lines-buffer
  "xC" 'my/load-personal-config
  "xT" 'load-theme)
 
