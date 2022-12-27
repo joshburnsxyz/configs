@@ -4,6 +4,8 @@
 
 ;; Load functions from site-lisp
 (require 'load-personal-config)
+(require 'reindent-buffer)
+(require 'uniquify-lines)
 
 ;; Global Keybindings
 (general-define-key "M-x" 'helm-M-x) ;; Use helm for M-x
