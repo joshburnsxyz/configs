@@ -3,11 +3,25 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export PATH="$HOME/.local/bin:$PATH:$(go env GOPATH)"
 
-fpath+=/opt/homebrew/share/zsh/site-functions
-autoload -U promptinit; promptinit
-prompt pure
+# Zplug
+zplug "zsh-users/zsh-history-substring-search"
+zplug "plugins/git", from:oh-my-zsh
+zplug "plugins/macos", from:oh-my-zsh
+zplug "plugins/emacs", from:oh-my-zsh
+zplug "plugins/common-aliases", from:oh-my-zsh
+zplug "plugins/aliases", from:oh-my-zsh
 
-# Load Plugins
-for file in $HOME/.zsh-plugins/**/*.plugin.zsh; source $file
+zplug "modules/prompt", from:prezto
+
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+# Then, source plugins and add commands to $PATH
+zplug load --verbose
 
 sysinfop
