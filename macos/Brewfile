@@ -20,6 +20,7 @@ brew "imagemagick"
 brew "poppler"
 brew "ffmpegthumbnailer"
 brew "unzip"
+brew "zplug"
 
 cask "transmission"
 cask "font-fira-mono-nerd-font"
