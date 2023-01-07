@@ -7,30 +7,6 @@ export PATH="$PATH:/Users/jb/Downloads/flutter/bin"
 
 export ZPLUG_HOME=/opt/homebrew/opt/zplug
 
-# Zplug
-source $ZPLUG_HOME/init.zsh
-zplug "zsh-users/zsh-history-substring-search"
-zplug "plugins/git", from:oh-my-zsh
-zplug "plugins/macos", from:oh-my-zsh
-zplug "plugins/emacs", from:oh-my-zsh
-zplug "plugins/common-aliases", from:oh-my-zsh
-zplug "plugins/aliases", from:oh-my-zsh
-zplug "modules/prompt", from:prezto
-zplug "plugins/shrink-path", from:oh-my-zsh
-zplug "plugins/gitfast", from:oh-my-zsh, defer:1
-zplug "plugins/virtualenv", from:oh-my-zsh
-
-# Install plugins if there are plugins that have not been installed
-if ! zplug check --verbose; then
-    printf "Install? [y/N]: "
-    if read -q; then
-        echo; zplug install
-    fi
-fi
-
-# Then, source plugins and add commands to $PATH
-zplug load --verbose
-
 # Prompt theme
 setopt prompt_subst
 autoload colors zsh/terminfo
@@ -86,4 +62,25 @@ function theme_proxy() {
 
 PROMPT='%(!.${PR_RED}.${PR_BLUE})$PR_NO_COLOUR %(!.${PR_RED}root$PR_NO_COLOUR.${PR_BOLD_BLUE}%n$PR_NO_COLOUR) $(theme_ssh)$(theme_proxy)%3~$(theme_git_info)${PR_NO_COLOUR}%(?. .$PR_RED ! $PR_NOCOLOR)%(!.${PR_RED}#${PR_NO_COLOUR}.${PR_BLUE}>$PR_NO_COLOUR) ${PR_NO_COLOUR}'
 
-sysinfop
+# Zplug
+source $ZPLUG_HOME/init.zsh
+zplug "zsh-users/zsh-history-substring-search"
+zplug "plugins/git", from:oh-my-zsh
+zplug "plugins/macos", from:oh-my-zsh
+zplug "plugins/emacs", from:oh-my-zsh
+zplug "plugins/common-aliases", from:oh-my-zsh
+zplug "plugins/aliases", from:oh-my-zsh
+zplug "plugins/shrink-path", from:oh-my-zsh
+zplug "plugins/gitfast", from:oh-my-zsh, defer:1
+zplug "plugins/virtualenv", from:oh-my-zsh
+
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+# Then, source plugins and add commands to $PATH
+zplug load
