@@ -114,4 +114,16 @@
   :config
   (load-theme 'kaolin-dark t))
 
+;; Page Break Lines - Display form feeds as rules
+(use-package page-break-lines)
+
+;; All The Icons
+(use-package all-the-icons
+  :if (display-graphic-p))
+
+;; Dashboard
+(use-package emacs-dashboard
+  :config
+  (dashboard-setup-startup-hook))
+
 (provide 'init-packages)
