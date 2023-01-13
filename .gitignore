@@ -50,3 +50,4 @@ flycheck_*.el
 /emacs/.emacs.d/custom.el
 /emacs/.emacs.d/projectile-bookmarks.eld
 /emacs/.emacs.d/transient/
+/emacs/.emacs.d/recentf
