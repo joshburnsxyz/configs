@@ -11,5 +11,13 @@
 ;; To disable shortcut "jump" indicators for each section, set
 (setq dashboard-show-shortcuts nil)
 
+;; add icons to the widget headings and their items:
+(setq dashboard-set-heading-icons t)
+(setq dashboard-set-file-icons t)
+
+(dashboard-modify-heading-icons '((recents . "file-text")
+                                  (bookmarks . "book")))
+
+(setq dashboard-set-navigator t)
 
 (provide 'init-dashboard)
