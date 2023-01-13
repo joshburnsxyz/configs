@@ -122,7 +122,7 @@
   :if (display-graphic-p))
 
 ;; Dashboard
-(use-package emacs-dashboard
+(use-package dashboard
   :config
   (dashboard-setup-startup-hook))
 

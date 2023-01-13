@@ -19,6 +19,7 @@
 (require 'init-packages)
 (require 'init-statusbar)
 (require 'init-org)
+(require 'init-dashboard)
 
 ;; Assign Keybindings last
 (require 'init-keybindings)
