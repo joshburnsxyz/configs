@@ -21,6 +21,12 @@
 (require 'init-org)
 (require 'init-dashboard)
 
+;; Typescript Support
+(require 'init-typescript)
+
+;; Prisma Mode
+(require 'prisma-mode)
+
 ;; Set Theme
 (load-theme 'kaolin-temple t)
 
