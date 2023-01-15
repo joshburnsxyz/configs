@@ -40,10 +40,10 @@
  "ts" 'prettify-symbols-mode
  "tw" 'writeroom-mode
  "tl" 'global-display-line-numbers-mode
+ "tt" 'neotree-toggle
  ;; x+ Misc.
  "xt" 'term
  "xu" 'my/uniquify-all-lines-buffer
- "xC" 'my/load-personal-config
- "xT" 'load-theme)
+ "xC" 'my/load-personal-config)
 
 (provide 'init-keybindings)

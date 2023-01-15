@@ -4,7 +4,9 @@
 ;;; Code:
 
 ;; Minibuffer extensions
-(use-package helm)
+(use-package helm
+  :config
+  (helm-mode 1))
 
 ;; Evil mode - vim emulation
 (use-package evil
@@ -112,7 +114,7 @@
 ;; Kaolin Themes - Theme package
 (use-package kaolin-themes
   :config
-  (load-theme 'kaolin-dark t))
+  (load-theme 'kaolin-breeze t))
 
 ;; Page Break Lines - Display form feeds as rules
 (use-package page-break-lines)
@@ -125,5 +127,10 @@
 (use-package dashboard
   :config
   (dashboard-setup-startup-hook))
+
+;; NeoTree - File tree browser
+(use-package neotree
+  :config
+  (setq neo-theme (if (display-graphic-p) 'icons 'arrow)))
 
 (provide 'init-packages)
