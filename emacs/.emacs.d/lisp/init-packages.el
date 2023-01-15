@@ -112,9 +112,7 @@
 (use-package writeroom-mode)
 
 ;; Kaolin Themes - Theme package
-(use-package kaolin-themes
-  :config
-  (load-theme 'kaolin-breeze t))
+(use-package kaolin-themes)
 
 ;; Page Break Lines - Display form feeds as rules
 (use-package page-break-lines)

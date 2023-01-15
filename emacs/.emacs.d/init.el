@@ -21,5 +21,8 @@
 (require 'init-org)
 (require 'init-dashboard)
 
+;; Set Theme
+(load-theme 'kaolin-temple t)
+
 ;; Assign Keybindings last
 (require 'init-keybindings)
