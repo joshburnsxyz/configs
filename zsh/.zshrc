@@ -2,8 +2,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # Path overrides
-export PATH="$HOME/.local/bin:$PATH:$(go env GOPATH)"
-export PATH="$PATH:/Users/jb/Downloads/flutter/bin"
+export PATH="$HOME/.local/bin:$PATH:$(go env GOPATH)/bin"
 
 export ZPLUG_HOME=/opt/homebrew/opt/zplug
 
@@ -67,7 +66,6 @@ source $ZPLUG_HOME/init.zsh
 zplug "zsh-users/zsh-history-substring-search"
 zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/macos", from:oh-my-zsh
-zplug "plugins/emacs", from:oh-my-zsh
 zplug "plugins/common-aliases", from:oh-my-zsh
 zplug "plugins/aliases", from:oh-my-zsh
 zplug "plugins/shrink-path", from:oh-my-zsh
