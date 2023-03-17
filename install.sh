@@ -12,4 +12,4 @@ echo "installing npm packages"
 . ./macos/npm-global.sh
 
 stow -t $HOME zsh
-stow -t $HOME emacs
+stow -t $HOME vim
