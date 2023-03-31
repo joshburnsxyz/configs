@@ -1,8 +1,9 @@
 return {
+  { "sonph/onehalf" },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "habamax",
+      colorscheme = "onehalf",
     },
   },
 }
