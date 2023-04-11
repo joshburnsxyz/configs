@@ -15,5 +15,5 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
-map("n", "<leader>ug", "<cmd>Goyo<cr>", { desc = "Centre text in window" })
+map("n", "<leader>ug", "<cmd>Goyo<cr><cmd>PencilToggle<cr>", { desc = "Centre text in window" })
 map("n", "<leader>cc", "<cmd>NERDCommenterToggle<cr>", { desc = "Toggle comment on line" })
