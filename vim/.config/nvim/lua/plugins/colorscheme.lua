@@ -1,12 +1,11 @@
 return {
-  { "chama-chomo/grail" },
-  { "ellisonleao/gruvbox.nvim" },
+  { "joshburnsxyz/icandy.vim" },
 
-  -- Configure LazyVim to load gruvbox
+  -- Configure LazyVim to load custom theme
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "grail",
+      colorscheme = "icandy",
     },
   },
 }
