@@ -9,6 +9,5 @@ Install config packages with GNU stow like so...
 
 
 $ stow -t $HOME zsh
-$ stow -t $HOME emacs
 
 etc...
