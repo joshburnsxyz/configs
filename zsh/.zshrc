@@ -61,7 +61,8 @@ function theme_proxy() {
 
 PROMPT='%(!.${PR_RED}.${PR_BLUE})$PR_NO_COLOUR %(!.${PR_RED}root$PR_NO_COLOUR.${PR_BOLD_BLUE}%n$PR_NO_COLOUR) $(theme_ssh)$(theme_proxy)%3~$(theme_git_info)${PR_NO_COLOUR}%(?. .$PR_RED ! $PR_NOCOLOR)%(!.${PR_RED}#${PR_NO_COLOUR}.${PR_BLUE}>$PR_NO_COLOUR) ${PR_NO_COLOUR}'
 
-alias vim=nvim
+# Alias for laravel sail script
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 
 # Zplug
 source $ZPLUG_HOME/init.zsh
