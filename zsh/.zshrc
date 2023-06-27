@@ -2,7 +2,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # Path overrides
-export PATH="$HOME/.local/bin:$PATH:$(go env GOPATH)/bin:$HOME/.config/emacs/bin"
+export PATH="$HOME/.local/bin:/opt/homebrew/bin:$PATH:$(go env GOPATH)/bin:$HOME/.config/emacs/bin"
 
 export ZPLUG_HOME=/opt/homebrew/opt/zplug
 
