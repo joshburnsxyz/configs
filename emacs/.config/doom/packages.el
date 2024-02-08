@@ -50,3 +50,4 @@
 ;(unpin! t)
 
 (package! rustic)
+(package! all-the-icons)
